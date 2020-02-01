@@ -1,10 +1,16 @@
 package udemy;
 
 public class BubbleSort {
+    /**
+     * O(n^2) Time Complexity
+     * In each individual iteration, a single value floats to
+     * end or beginning based on sort order, and increments or decrements the
+     * partition index. The process then repeats until the new partition index reaches 1
+     * **/
     public static int[] performBubbleSortAscending(int[] arrayToSort) {
         int unsortedPartitionIndex = arrayToSort.length - 1;
         for (int i = unsortedPartitionIndex; i > 0; i--) {
-            for (int j = 0; j < unsortedPartitionIndex; j++) {
+            for (int j = 0; j < i; j++) {
                 swapAscending(arrayToSort, j, j+1);
             }
         }
