@@ -44,6 +44,19 @@ public class BubbleSort {
             arrayToSort[j] = temp;
         }
     }
+
+    public static int[] performShellBubbleSort(int[] arrayToSort) {
+        for (int gap = arrayToSort.length; gap > 0; gap = gap * 10 / 13) {
+            for (int currentGapIndex = gap; currentGapIndex < arrayToSort.length; currentGapIndex++) {
+                if (arrayToSort[currentGapIndex] < arrayToSort[currentGapIndex - gap]) {
+                    int temp = arrayToSort[currentGapIndex];
+                    arrayToSort[currentGapIndex] = arrayToSort[currentGapIndex - gap];
+                    arrayToSort[currentGapIndex - gap] = temp;
+                }
+            }
+        }
+        return arrayToSort;
+    }
 }
 
 // [20,35,-15,7,55,1,-22]

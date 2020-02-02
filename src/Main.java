@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
-        int[] array = ShellSort.performShellSort(new int[]{20,35,-15,7,55,1,-22});
+        int[] array = BubbleSort.performShellBubbleSort(new int[]{20,35,-15,7,55,1,-22});
         Arrays.stream(array).forEachOrdered(System.out::println);
     }
 }
