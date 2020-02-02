@@ -3,13 +3,15 @@ package udemy;
 /**
  *Time complexity of O(n^2)
  * Similar to bubble sort
- * In each top level iteration, the index of the largest number
+ * In each top level traversal, the index of the largest number
  * in the unsorted partition is identified and stored. At the end of
- * the iteration, the largest number discovered is swapped with the number
+ * the traversal, the largest number discovered is swapped with the number
  * at the last index of the unsorted partition. The unsorted partition index
- * is then decremented and the top level iteration repeats. The second level
+ * is then decremented and the top level traversal repeats. The second level
  * iteration is simply responsible for iterating through the unsorted partition
  * and finding the index of the largest number
+ *
+ * Stability: Unstable
  * **/
 public class SelectionSort {
     public static int[] performSelectionSortAsc(int[] arrayToSort) {

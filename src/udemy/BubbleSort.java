@@ -3,9 +3,11 @@ package udemy;
 public class BubbleSort {
     /**
      * O(n^2) Time Complexity
-     * In each individual iteration, a single value floats to
+     * In each individual traversal, a single value floats to
      * end or beginning based on sort order, and increments or decrements the
      * partition index. The process then repeats until the new partition index reaches 1
+     *
+     * Stability: Stable
      * **/
     public static int[] performBubbleSortAscending(int[] arrayToSort) {
         int unsortedPartitionIndex = arrayToSort.length - 1;
