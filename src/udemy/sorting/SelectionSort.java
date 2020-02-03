@@ -1,4 +1,4 @@
-package udemy;
+package udemy.sorting;
 
 /**
  *Time complexity of O(n^2)

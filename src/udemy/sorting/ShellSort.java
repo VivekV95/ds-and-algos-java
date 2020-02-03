@@ -1,4 +1,4 @@
-package udemy;
+package udemy.sorting;
 
 /**
  * Worst case time complexity: O(n^2)
