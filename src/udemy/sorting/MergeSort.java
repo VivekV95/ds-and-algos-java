@@ -24,7 +24,7 @@ public class MergeSort {
                     ? input[leftArrayIndex++]
                     : input[rightArrayIndex++];
         }
-        System.arraycopy(input, leftArrayIndex, input, start + tempIndex, mid - leftArrayIndex);
+        System.arraycopy(input, leftArrayIndex, input, start + tempIndex, mid + 1 - leftArrayIndex);
         System.arraycopy(tempArray, 0, input, start, tempIndex);
     }
 }
